@@ -1,0 +1,1672 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/linkedin/ontologies/2024/6/untitled-ontology-4/"
+     xml:base="http://www.semanticweb.org/linkedin/ontologies/2024/6/untitled-ontology-4/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+    <owl:Ontology rdf:about="urn:absolute:http://TTKGs.org/">
+        <dc:creator>Ashleigh Faith</dc:creator>
+        <rdfs:comment>Created for LLM grounding on environmental factors at TTOO.</rdfs:comment>
+        <rdfs:comment>TTOO: Customer database D0001
+TTOO: Product Catalog D0002
+TTOO: Purchase Orders D0003
+TTOO: Vendor List D0004
+https://www.wikidata.org/</rdfs:comment>
+        <owl:versionInfo>Created July 2024</owl:versionInfo>
+        <owl:versionInfo>This model will be refreshed entirely for each version and a 3 month warning to stakeholders will be sent out prior to release.</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/identifier -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/identifier">
+        <skos:defintion>Used to capture external identifiers.</skos:defintion>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#defintion -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#defintion"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/TTKG641187e2_819f_4d0b_ab81_453e729e1bb9 -->
+
+    <rdfs:Datatype rdf:about="urn:absolute:http://TTKGs.org/TTKG641187e2_819f_4d0b_ab81_453e729e1bb9">
+        <rdfs:label xml:lang="en">AllowedUnitMeasure</rdfs:label>
+    </rdfs:Datatype>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/TTKG232788c0_0924_451d_98eb_ebfd224b6acf -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:http://TTKGs.org/TTKG232788c0_0924_451d_98eb_ebfd224b6acf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:http://TTKGs.org/TTKG232788c0_0924_451d_98eb_ebfd224b6acf"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:http://TTKGs.org/TTKG935060d7_3e14_4466_90b9_dbb8c8bf8d49"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:http://TTKGs.org/TTKG232788c0_0924_451d_98eb_ebfd224b6acf"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="urn:absolute:http://TTKGs.org/TTKG7c9f31e1_8767_4c4c_979e_dcb6cdc91414"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <dc:identifier>https://www.wikidata.org/wiki/Property:P6000</dc:identifier>
+        <rdfs:label xml:lang="en">waterFootprint</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/TTKG5faa3ea2_d5a2_426f_9d67_5ae2a8abf3f3 -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:http://TTKGs.org/TTKG5faa3ea2_d5a2_426f_9d67_5ae2a8abf3f3">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:http://TTKGs.org/TTKG5faa3ea2_d5a2_426f_9d67_5ae2a8abf3f3"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:http://TTKGs.org/TTKG935060d7_3e14_4466_90b9_dbb8c8bf8d49"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:http://TTKGs.org/TTKG5faa3ea2_d5a2_426f_9d67_5ae2a8abf3f3"/>
+                <owl:allValuesFrom rdf:resource="urn:absolute:http://TTKGs.org/TTKG02cbfeaf_6af4_4235_a5ce_1a8f498784d1"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:label xml:lang="en">hasAdditive</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/TTKGc7b18224_12ed_4eb0_8a3d_8a6f571884ab -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:http://TTKGs.org/TTKGc7b18224_12ed_4eb0_8a3d_8a6f571884ab">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:http://TTKGs.org/TTKGc7b18224_12ed_4eb0_8a3d_8a6f571884ab"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:http://TTKGs.org/CustomerID"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:http://TTKGs.org/TTKGc7b18224_12ed_4eb0_8a3d_8a6f571884ab"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:http://TTKGs.org/TTKG278ea688_c715_45b2_838f_d49a72d0b8ba"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:http://TTKGs.org/TTKGc7b18224_12ed_4eb0_8a3d_8a6f571884ab"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:http://TTKGs.org/TTKG250197f1_511f_4a2c_a200_22047da1d6cd"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:label xml:lang="en">homeState</rdfs:label>
+        <skos:defintion>Refers to the primary state of residence or the state where an entity, such as an individual or a business, is legally domiciled. [Investopedia: Domicile, 2024].</skos:defintion>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/TTKGe0410959_d96d_4929_a720_3cec486b216f -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:http://TTKGs.org/TTKGe0410959_d96d_4929_a720_3cec486b216f">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:http://TTKGs.org/TTKGe0410959_d96d_4929_a720_3cec486b216f"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:http://TTKGs.org/TTKG278ea688_c715_45b2_838f_d49a72d0b8ba"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:http://TTKGs.org/TTKGe0410959_d96d_4929_a720_3cec486b216f"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:http://TTKGs.org/VendorType"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:http://TTKGs.org/TTKGe0410959_d96d_4929_a720_3cec486b216f"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:http://TTKGs.org/TTKG02cbfeaf_6af4_4235_a5ce_1a8f498784d1"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:label xml:lang="en">produces</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/byProduct -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:http://TTKGs.org/byProduct">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:http://TTKGs.org/byProduct"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:http://TTKGs.org/TTKG17bbdbc4_ee06_4f40_be9b_d176b6fd1363"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/hasAddress -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:http://TTKGs.org/hasAddress">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:http://TTKGs.org/hasAddress"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:http://TTKGs.org/CustomerID"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:http://TTKGs.org/hasAddress"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:http://TTKGs.org/TTKG278ea688_c715_45b2_838f_d49a72d0b8ba"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-17T20:44:45Z</dc:date>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/hasID -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:http://TTKGs.org/hasID">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:http://TTKGs.org/hasID"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:http://TTKGs.org/CustomerID"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:http://TTKGs.org/hasID"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:http://TTKGs.org/TTKG278ea688_c715_45b2_838f_d49a72d0b8ba"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:http://TTKGs.org/hasID"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:http://TTKGs.org/TTKGfc34ba00_eb0d_4c44_8596_a8822aefa219"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-17T21:53:15Z</dc:date>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/hasName -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:http://TTKGs.org/hasName">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:http://TTKGs.org/hasName"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:http://TTKGs.org/CustomerID"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:http://TTKGs.org/hasName"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:http://TTKGs.org/TTKG278ea688_c715_45b2_838f_d49a72d0b8ba"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:http://TTKGs.org/hasName"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:http://TTKGs.org/TTKGfc34ba00_eb0d_4c44_8596_a8822aefa219"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:http://TTKGs.org/hasName"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="urn:absolute:http://TTKGs.org/TTKG59dec158_c8f9_416d_b0d0_eaa0720b1f6e"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/hasType -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:http://TTKGs.org/hasType">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:http://TTKGs.org/hasType"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:http://TTKGs.org/TTKG278ea688_c715_45b2_838f_d49a72d0b8ba"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:http://TTKGs.org/hasType"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:http://TTKGs.org/TTKGfc34ba00_eb0d_4c44_8596_a8822aefa219"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:http://TTKGs.org/hasType"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:http://TTKGs.org/TTKG2836c901_a6fc_426d_933a_67dcfbff0a29"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:http://TTKGs.org/hasType"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:http://TTKGs.org/VendorType"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-17T21:09:21Z</dc:date>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/ingredientOf -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:http://TTKGs.org/ingredientOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:http://TTKGs.org/ingredientOf"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:http://TTKGs.org/TTKG02cbfeaf_6af4_4235_a5ce_1a8f498784d1"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-17T16:42:48Z</dc:date>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/measureOutputOf -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:http://TTKGs.org/measureOutputOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:http://TTKGs.org/measureOutputOf"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:http://TTKGs.org/OutputMeasures"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/purchase -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:http://TTKGs.org/purchase">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:http://TTKGs.org/purchase"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:http://TTKGs.org/TTKGfc34ba00_eb0d_4c44_8596_a8822aefa219"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-17T16:43:52Z</dc:date>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/TTKG28691a9f_a99b_4c75_a5d0_904ad92be7fe -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute:http://TTKGs.org/TTKG28691a9f_a99b_4c75_a5d0_904ad92be7fe">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute:http://TTKGs.org/TTKG7fdfc961_92b9_4a24_9618_48eae14322b0"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:http://TTKGs.org/TTKG232788c0_0924_451d_98eb_ebfd224b6acf"/>
+                <owl:allValuesFrom rdf:resource="urn:absolute:http://TTKGs.org/TTKG7c9f31e1_8767_4c4c_979e_dcb6cdc91414"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="urn:absolute:http://TTKGs.org/TTKG641187e2_819f_4d0b_ab81_453e729e1bb9"/>
+        <dc:identifier>https://www.wikidata.org/wiki/Q57899268</dc:identifier>
+        <rdfs:label xml:lang="en">cubicMetrePerTon</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/TTKG7fdfc961_92b9_4a24_9618_48eae14322b0 -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute:http://TTKGs.org/TTKG7fdfc961_92b9_4a24_9618_48eae14322b0">
+        <dc:identifier>https://www.wikidata.org/wiki/Q21514353</dc:identifier>
+        <rdfs:label xml:lang="en">AllowedUnit</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/Antioxidant -->
+
+    <owl:Class rdf:about="urn:absolute:http://TTKGs.org/Antioxidant">
+        <rdfs:subClassOf rdf:resource="urn:absolute:http://TTKGs.org/OilveOilEffect"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/Bottling_Supplies -->
+
+    <owl:Class rdf:about="urn:absolute:http://TTKGs.org/Bottling_Supplies">
+        <rdfs:subClassOf rdf:resource="urn:absolute:http://TTKGs.org/VendorType"/>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-18T11:48:01Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/Chili_Oil -->
+
+    <owl:Class rdf:about="urn:absolute:http://TTKGs.org/Chili_Oil">
+        <rdfs:subClassOf rdf:resource="urn:absolute:http://TTKGs.org/VendorType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:http://TTKGs.org/TTKGe0410959_d96d_4929_a720_3cec486b216f"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:http://TTKGs.org/TTKGdb9e000f_8062_4cee_8b09_99c613f40dd9"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-18T11:48:24Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/Citrus -->
+
+    <owl:Class rdf:about="urn:absolute:http://TTKGs.org/Citrus">
+        <rdfs:subClassOf rdf:resource="urn:absolute:http://TTKGs.org/VendorType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:http://TTKGs.org/TTKGe0410959_d96d_4929_a720_3cec486b216f"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:http://TTKGs.org/TTKGc73048b4_4be8_49b7_83f1_b3327ac10d45"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-18T11:50:43Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/CustomerAddress -->
+
+    <owl:Class rdf:about="urn:absolute:http://TTKGs.org/CustomerAddress">
+        <rdfs:subClassOf rdf:resource="urn:absolute:http://TTKGs.org/TTKG2f651948_0f17_4e43_9d45_19b43aaa21c7"/>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-17T16:27:44Z</dc:date>
+        <rdfs:comment>Customers can only have up to 5 stored addresses at any given time due to the constrains in the TTOO CMS.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/CustomerID -->
+
+    <owl:Class rdf:about="urn:absolute:http://TTKGs.org/CustomerID">
+        <rdfs:subClassOf rdf:resource="urn:absolute:http://TTKGs.org/TTKG2f651948_0f17_4e43_9d45_19b43aaa21c7"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:http://TTKGs.org/hasName"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:http://TTKGs.org/FullCustomerName"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:http://TTKGs.org/purchase"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="urn:absolute:http://TTKGs.org/TTKGfc34ba00_eb0d_4c44_8596_a8822aefa219"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:http://TTKGs.org/TTKGc7b18224_12ed_4eb0_8a3d_8a6f571884ab"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="urn:absolute:http://TTKGs.org/TTKG250197f1_511f_4a2c_a200_22047da1d6cd"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:http://TTKGs.org/hasAddress"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="urn:absolute:http://TTKGs.org/CustomerAddress"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-17T16:27:34Z</dc:date>
+        <skos:defintion>Customer can be any person or organization that has a transaction or purchase with TTOO.</skos:defintion>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/FullCustomerName -->
+
+    <owl:Class rdf:about="urn:absolute:http://TTKGs.org/FullCustomerName">
+        <rdfs:subClassOf rdf:resource="urn:absolute:http://TTKGs.org/TTKG2f651948_0f17_4e43_9d45_19b43aaa21c7"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:http://TTKGs.org/hasID"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="urn:absolute:http://TTKGs.org/CustomerID"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-17T16:27:23Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/Herbs -->
+
+    <owl:Class rdf:about="urn:absolute:http://TTKGs.org/Herbs">
+        <rdfs:subClassOf rdf:resource="urn:absolute:http://TTKGs.org/VendorType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:http://TTKGs.org/TTKGe0410959_d96d_4929_a720_3cec486b216f"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:http://TTKGs.org/TTKGd39a0727_d31b_41dd_bdd7_28a96e7940c1"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-18T11:48:14Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/OilveOilEffect -->
+
+    <owl:Class rdf:about="urn:absolute:http://TTKGs.org/OilveOilEffect"/>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/OutputMeasures -->
+
+    <owl:Class rdf:about="urn:absolute:http://TTKGs.org/OutputMeasures"/>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/OxygenRadicalAntioxidantCapacity -->
+
+    <owl:Class rdf:about="urn:absolute:http://TTKGs.org/OxygenRadicalAntioxidantCapacity">
+        <rdfs:subClassOf rdf:resource="urn:absolute:http://TTKGs.org/OutputMeasures"/>
+        <dc:identifier>https://www.wikidata.org/wiki/Q902552</dc:identifier>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/Packaging -->
+
+    <owl:Class rdf:about="urn:absolute:http://TTKGs.org/Packaging">
+        <rdfs:subClassOf rdf:resource="urn:absolute:http://TTKGs.org/VendorType"/>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-18T11:48:20Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/Pulp -->
+
+    <owl:Class rdf:about="urn:absolute:http://TTKGs.org/Pulp">
+        <rdfs:subClassOf rdf:resource="urn:absolute:http://TTKGs.org/TTKG2836c901_a6fc_426d_933a_67dcfbff0a29"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:http://TTKGs.org/byProduct"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:http://TTKGs.org/TTKG935060d7_3e14_4466_90b9_dbb8c8bf8d49"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:http://TTKGs.org/measureOutputOf"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="urn:absolute:http://TTKGs.org/OxygenRadicalAntioxidantCapacity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/Shipping_Supplies -->
+
+    <owl:Class rdf:about="urn:absolute:http://TTKGs.org/Shipping_Supplies">
+        <rdfs:subClassOf rdf:resource="urn:absolute:http://TTKGs.org/VendorType"/>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-18T11:48:10Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/TTKG02cbfeaf_6af4_4235_a5ce_1a8f498784d1 -->
+
+    <owl:Class rdf:about="urn:absolute:http://TTKGs.org/TTKG02cbfeaf_6af4_4235_a5ce_1a8f498784d1">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:http://TTKGs.org/TTKG232788c0_0924_451d_98eb_ebfd224b6acf"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="urn:absolute:http://TTKGs.org/TTKG7c9f31e1_8767_4c4c_979e_dcb6cdc91414"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Additive</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/TTKG17bbdbc4_ee06_4f40_be9b_d176b6fd1363 -->
+
+    <owl:Class rdf:about="urn:absolute:http://TTKGs.org/TTKG17bbdbc4_ee06_4f40_be9b_d176b6fd1363">
+        <rdfs:label xml:lang="en">Product</rdfs:label>
+        <skos:defintion>Any item or service that is created or manufactured to be sold to consumers or other businesses. It includes both tangible goods, such as electronics, clothing, and food items, and intangible services like software, consulting, or subscriptions. Products typically have distinct characteristics, including name, price, description, and category, which help to differentiate them in the marketplace. [Harvard Business Review: What Is a Product?, 2024]</skos:defintion>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/TTKG250197f1_511f_4a2c_a200_22047da1d6cd -->
+
+    <owl:Class rdf:about="urn:absolute:http://TTKGs.org/TTKG250197f1_511f_4a2c_a200_22047da1d6cd">
+        <owl:disjointWith rdf:resource="urn:absolute:http://TTKGs.org/TTKG2f651948_0f17_4e43_9d45_19b43aaa21c7"/>
+        <rdfs:label xml:lang="en">State</rdfs:label>
+        <skos:defintion>Is a State within the continental United States of America.</skos:defintion>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/TTKG278ea688_c715_45b2_838f_d49a72d0b8ba -->
+
+    <owl:Class rdf:about="urn:absolute:http://TTKGs.org/TTKG278ea688_c715_45b2_838f_d49a72d0b8ba">
+        <rdfs:subClassOf rdf:resource="urn:absolute:http://TTKGs.org/TTKGc6590c1a_39f5_4bcf_a610_444426d81f02"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:http://TTKGs.org/TTKGe0410959_d96d_4929_a720_3cec486b216f"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:http://TTKGs.org/TTKG02cbfeaf_6af4_4235_a5ce_1a8f498784d1"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:http://TTKGs.org/hasType"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="urn:absolute:http://TTKGs.org/VendorType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:http://TTKGs.org/TTKGc7b18224_12ed_4eb0_8a3d_8a6f571884ab"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="urn:absolute:http://TTKGs.org/TTKG250197f1_511f_4a2c_a200_22047da1d6cd"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:http://TTKGs.org/hasName"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="urn:absolute:http://TTKGs.org/TTKG59dec158_c8f9_416d_b0d0_eaa0720b1f6e"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:http://TTKGs.org/hasAddress"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="urn:absolute:http://TTKGs.org/TTKGa5ce1cf2_e0a5_4b96_a3cc_3e59761c081a"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">VendorID</rdfs:label>
+        <skos:defintion>Customer can be any person or organization that has a transaction or purchase with TTOO.</skos:defintion>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/TTKG2836c901_a6fc_426d_933a_67dcfbff0a29 -->
+
+    <owl:Class rdf:about="urn:absolute:http://TTKGs.org/TTKG2836c901_a6fc_426d_933a_67dcfbff0a29">
+        <rdfs:subClassOf rdf:resource="urn:absolute:http://TTKGs.org/TTKG17bbdbc4_ee06_4f40_be9b_d176b6fd1363"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:http://TTKGs.org/TTKG5faa3ea2_d5a2_426f_9d67_5ae2a8abf3f3"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:http://TTKGs.org/TTKG02cbfeaf_6af4_4235_a5ce_1a8f498784d1"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">ProductTypes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/TTKG2f651948_0f17_4e43_9d45_19b43aaa21c7 -->
+
+    <owl:Class rdf:about="urn:absolute:http://TTKGs.org/TTKG2f651948_0f17_4e43_9d45_19b43aaa21c7">
+        <rdfs:label xml:lang="en">Customer</rdfs:label>
+        <skos:defintion>Customer can be any person or organization that has a transactions with TTOO.”</skos:defintion>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/TTKG35c0925f_eb86_43f9_bdc5_78d54df40c92 -->
+
+    <owl:Class rdf:about="urn:absolute:http://TTKGs.org/TTKG35c0925f_eb86_43f9_bdc5_78d54df40c92">
+        <rdfs:subClassOf rdf:resource="urn:absolute:http://TTKGs.org/TTKG935060d7_3e14_4466_90b9_dbb8c8bf8d49"/>
+        <rdfs:label xml:lang="en">Bold</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/TTKG4b6c8521_d860_4288_95e6_9eec4faac417 -->
+
+    <owl:Class rdf:about="urn:absolute:http://TTKGs.org/TTKG4b6c8521_d860_4288_95e6_9eec4faac417">
+        <rdfs:subClassOf rdf:resource="urn:absolute:http://TTKGs.org/TTKG935060d7_3e14_4466_90b9_dbb8c8bf8d49"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:http://TTKGs.org/ingredientOf"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="urn:absolute:http://TTKGs.org/TTKGd39a0727_d31b_41dd_bdd7_28a96e7940c1"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Rosemary</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/TTKG59dec158_c8f9_416d_b0d0_eaa0720b1f6e -->
+
+    <owl:Class rdf:about="urn:absolute:http://TTKGs.org/TTKG59dec158_c8f9_416d_b0d0_eaa0720b1f6e">
+        <rdfs:subClassOf rdf:resource="urn:absolute:http://TTKGs.org/TTKGc6590c1a_39f5_4bcf_a610_444426d81f02"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:http://TTKGs.org/hasID"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="urn:absolute:http://TTKGs.org/TTKG278ea688_c715_45b2_838f_d49a72d0b8ba"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">VendorName</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/TTKG7c9f31e1_8767_4c4c_979e_dcb6cdc91414 -->
+
+    <owl:Class rdf:about="urn:absolute:http://TTKGs.org/TTKG7c9f31e1_8767_4c4c_979e_dcb6cdc91414">
+        <rdfs:subClassOf rdf:resource="urn:absolute:http://TTKGs.org/OutputMeasures"/>
+        <rdfs:label xml:lang="en">WaterEmissionOutput</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/TTKG935060d7_3e14_4466_90b9_dbb8c8bf8d49 -->
+
+    <owl:Class rdf:about="urn:absolute:http://TTKGs.org/TTKG935060d7_3e14_4466_90b9_dbb8c8bf8d49">
+        <rdfs:subClassOf rdf:resource="urn:absolute:http://TTKGs.org/TTKG2836c901_a6fc_426d_933a_67dcfbff0a29"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:http://TTKGs.org/TTKG232788c0_0924_451d_98eb_ebfd224b6acf"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:http://TTKGs.org/TTKG7c9f31e1_8767_4c4c_979e_dcb6cdc91414"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">OliveOil</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/TTKG95f29991_4fce_4242_a761_923ffde8a2f2 -->
+
+    <owl:Class rdf:about="urn:absolute:http://TTKGs.org/TTKG95f29991_4fce_4242_a761_923ffde8a2f2">
+        <rdfs:subClassOf rdf:resource="urn:absolute:http://TTKGs.org/TTKG17bbdbc4_ee06_4f40_be9b_d176b6fd1363"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:http://TTKGs.org/hasID"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="urn:absolute:http://TTKGs.org/TTKGfc34ba00_eb0d_4c44_8596_a8822aefa219"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">ProductName</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/TTKGa5ce1cf2_e0a5_4b96_a3cc_3e59761c081a -->
+
+    <owl:Class rdf:about="urn:absolute:http://TTKGs.org/TTKGa5ce1cf2_e0a5_4b96_a3cc_3e59761c081a">
+        <rdfs:subClassOf rdf:resource="urn:absolute:http://TTKGs.org/TTKGc6590c1a_39f5_4bcf_a610_444426d81f02"/>
+        <rdfs:comment>Customers can only have up to 5 stored addresses at any given time due to the constrains in the TTOO CMS.</rdfs:comment>
+        <rdfs:label xml:lang="en">VendorAddress</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/TTKGa65e2034_1b8c_4bf8_b531_6e8c95f814ac -->
+
+    <owl:Class rdf:about="urn:absolute:http://TTKGs.org/TTKGa65e2034_1b8c_4bf8_b531_6e8c95f814ac">
+        <rdfs:subClassOf rdf:resource="urn:absolute:http://TTKGs.org/TTKG935060d7_3e14_4466_90b9_dbb8c8bf8d49"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:http://TTKGs.org/ingredientOf"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="urn:absolute:http://TTKGs.org/TTKGd39a0727_d31b_41dd_bdd7_28a96e7940c1"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Garlic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/TTKGc2a263f4_a4b0_4ae0_b48f_2dbf6d0a02ba -->
+
+    <owl:Class rdf:about="urn:absolute:http://TTKGs.org/TTKGc2a263f4_a4b0_4ae0_b48f_2dbf6d0a02ba">
+        <rdfs:subClassOf rdf:resource="urn:absolute:http://TTKGs.org/TTKG935060d7_3e14_4466_90b9_dbb8c8bf8d49"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:http://TTKGs.org/ingredientOf"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:http://TTKGs.org/TTKGdb9e000f_8062_4cee_8b09_99c613f40dd9"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Chili</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/TTKGc6590c1a_39f5_4bcf_a610_444426d81f02 -->
+
+    <owl:Class rdf:about="urn:absolute:http://TTKGs.org/TTKGc6590c1a_39f5_4bcf_a610_444426d81f02">
+        <rdfs:label xml:lang="en">Vendor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/TTKGc73048b4_4be8_49b7_83f1_b3327ac10d45 -->
+
+    <owl:Class rdf:about="urn:absolute:http://TTKGs.org/TTKGc73048b4_4be8_49b7_83f1_b3327ac10d45">
+        <rdfs:subClassOf rdf:resource="urn:absolute:http://TTKGs.org/TTKG02cbfeaf_6af4_4235_a5ce_1a8f498784d1"/>
+        <rdfs:label xml:lang="en">Citrus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/TTKGd24b38e0_b354_4b05_acde_90987286458d -->
+
+    <owl:Class rdf:about="urn:absolute:http://TTKGs.org/TTKGd24b38e0_b354_4b05_acde_90987286458d">
+        <rdfs:subClassOf rdf:resource="urn:absolute:http://TTKGs.org/TTKG2836c901_a6fc_426d_933a_67dcfbff0a29"/>
+        <rdfs:label xml:lang="en">Tour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/TTKGd39a0727_d31b_41dd_bdd7_28a96e7940c1 -->
+
+    <owl:Class rdf:about="urn:absolute:http://TTKGs.org/TTKGd39a0727_d31b_41dd_bdd7_28a96e7940c1">
+        <rdfs:subClassOf rdf:resource="urn:absolute:http://TTKGs.org/TTKG02cbfeaf_6af4_4235_a5ce_1a8f498784d1"/>
+        <rdfs:label xml:lang="en">Herb</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/TTKGdb9e000f_8062_4cee_8b09_99c613f40dd9 -->
+
+    <owl:Class rdf:about="urn:absolute:http://TTKGs.org/TTKGdb9e000f_8062_4cee_8b09_99c613f40dd9">
+        <rdfs:subClassOf rdf:resource="urn:absolute:http://TTKGs.org/TTKG02cbfeaf_6af4_4235_a5ce_1a8f498784d1"/>
+        <rdfs:label xml:lang="en">ChiliOil</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/TTKGdccdc782_b07c_46d4_b057_a3de93d49cdf -->
+
+    <owl:Class rdf:about="urn:absolute:http://TTKGs.org/TTKGdccdc782_b07c_46d4_b057_a3de93d49cdf">
+        <rdfs:subClassOf rdf:resource="urn:absolute:http://TTKGs.org/TTKG935060d7_3e14_4466_90b9_dbb8c8bf8d49"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:http://TTKGs.org/ingredientOf"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="urn:absolute:http://TTKGs.org/TTKGc73048b4_4be8_49b7_83f1_b3327ac10d45"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Lemon</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/TTKGe264d4cb_3c4b_43b4_8ed2_94949f4ad543 -->
+
+    <owl:Class rdf:about="urn:absolute:http://TTKGs.org/TTKGe264d4cb_3c4b_43b4_8ed2_94949f4ad543">
+        <rdfs:subClassOf rdf:resource="urn:absolute:http://TTKGs.org/TTKG935060d7_3e14_4466_90b9_dbb8c8bf8d49"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:http://TTKGs.org/ingredientOf"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:http://TTKGs.org/TTKGd39a0727_d31b_41dd_bdd7_28a96e7940c1"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Basil</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/TTKGfc34ba00_eb0d_4c44_8596_a8822aefa219 -->
+
+    <owl:Class rdf:about="urn:absolute:http://TTKGs.org/TTKGfc34ba00_eb0d_4c44_8596_a8822aefa219">
+        <rdfs:subClassOf rdf:resource="urn:absolute:http://TTKGs.org/TTKG17bbdbc4_ee06_4f40_be9b_d176b6fd1363"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:http://TTKGs.org/hasName"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:http://TTKGs.org/TTKG95f29991_4fce_4242_a761_923ffde8a2f2"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:http://TTKGs.org/hasType"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="urn:absolute:http://TTKGs.org/TTKG2836c901_a6fc_426d_933a_67dcfbff0a29"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">ProductID</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/VendorType -->
+
+    <owl:Class rdf:about="urn:absolute:http://TTKGs.org/VendorType">
+        <rdfs:subClassOf rdf:resource="urn:absolute:http://TTKGs.org/TTKGc6590c1a_39f5_4bcf_a610_444426d81f02"/>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-18T11:46:49Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/Alabama -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:http://TTKGs.org/Alabama">
+        <rdf:type rdf:resource="urn:absolute:http://TTKGs.org/TTKG250197f1_511f_4a2c_a200_22047da1d6cd"/>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-18T11:40:38Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/B0001 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:http://TTKGs.org/B0001">
+        <rdf:type rdf:resource="urn:absolute:http://TTKGs.org/TTKGfc34ba00_eb0d_4c44_8596_a8822aefa219"/>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-18T11:24:15Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/B0002 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:http://TTKGs.org/B0002">
+        <rdf:type rdf:resource="urn:absolute:http://TTKGs.org/TTKGfc34ba00_eb0d_4c44_8596_a8822aefa219"/>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-18T11:24:21Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/B0003 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:http://TTKGs.org/B0003">
+        <rdf:type rdf:resource="urn:absolute:http://TTKGs.org/TTKGfc34ba00_eb0d_4c44_8596_a8822aefa219"/>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-18T11:24:25Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/B0004 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:http://TTKGs.org/B0004">
+        <rdf:type rdf:resource="urn:absolute:http://TTKGs.org/TTKGfc34ba00_eb0d_4c44_8596_a8822aefa219"/>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-18T11:24:29Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/B0005 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:http://TTKGs.org/B0005">
+        <rdf:type rdf:resource="urn:absolute:http://TTKGs.org/TTKGfc34ba00_eb0d_4c44_8596_a8822aefa219"/>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-18T11:24:35Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/B0007 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:http://TTKGs.org/B0007">
+        <rdf:type rdf:resource="urn:absolute:http://TTKGs.org/TTKGfc34ba00_eb0d_4c44_8596_a8822aefa219"/>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-18T11:24:39Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/BasilBottle -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:http://TTKGs.org/BasilBottle">
+        <rdf:type rdf:resource="urn:absolute:http://TTKGs.org/TTKG95f29991_4fce_4242_a761_923ffde8a2f2"/>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-18T11:26:39Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/Blandit_Nam_Corp. -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:http://TTKGs.org/Blandit_Nam_Corp.">
+        <rdf:type rdf:resource="urn:absolute:http://TTKGs.org/TTKG59dec158_c8f9_416d_b0d0_eaa0720b1f6e"/>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-18T11:44:56Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/BoldBottle -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:http://TTKGs.org/BoldBottle">
+        <rdf:type rdf:resource="urn:absolute:http://TTKGs.org/TTKG95f29991_4fce_4242_a761_923ffde8a2f2"/>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-18T11:26:51Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/Brooke_Perkins -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:http://TTKGs.org/Brooke_Perkins">
+        <rdf:type rdf:resource="urn:absolute:http://TTKGs.org/FullCustomerName"/>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-18T11:30:49Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/California -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:http://TTKGs.org/California">
+        <rdf:type rdf:resource="urn:absolute:http://TTKGs.org/TTKG250197f1_511f_4a2c_a200_22047da1d6cd"/>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-18T11:40:32Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/Cally_Reynolds -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:http://TTKGs.org/Cally_Reynolds">
+        <rdf:type rdf:resource="urn:absolute:http://TTKGs.org/FullCustomerName"/>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-18T11:30:23Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/ChiliBottle -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:http://TTKGs.org/ChiliBottle">
+        <rdf:type rdf:resource="urn:absolute:http://TTKGs.org/TTKG95f29991_4fce_4242_a761_923ffde8a2f2"/>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-18T11:26:46Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/Drisden_Botanicals -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:http://TTKGs.org/Drisden_Botanicals">
+        <rdf:type rdf:resource="urn:absolute:http://TTKGs.org/TTKG59dec158_c8f9_416d_b0d0_eaa0720b1f6e"/>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-18T11:44:45Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/GarlicBottle -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:http://TTKGs.org/GarlicBottle">
+        <rdf:type rdf:resource="urn:absolute:http://TTKGs.org/TTKG95f29991_4fce_4242_a761_923ffde8a2f2"/>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-18T11:26:27Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/Georgia -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:http://TTKGs.org/Georgia">
+        <rdf:type rdf:resource="urn:absolute:http://TTKGs.org/TTKG250197f1_511f_4a2c_a200_22047da1d6cd"/>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-18T11:40:56Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/Germaine_Green -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:http://TTKGs.org/Germaine_Green">
+        <rdf:type rdf:resource="urn:absolute:http://TTKGs.org/FullCustomerName"/>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-18T11:31:09Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/Herbs_Herbs -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:http://TTKGs.org/Herbs_Herbs">
+        <rdf:type rdf:resource="urn:absolute:http://TTKGs.org/TTKG59dec158_c8f9_416d_b0d0_eaa0720b1f6e"/>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-18T11:44:20Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/Hunter_G._Newton -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:http://TTKGs.org/Hunter_G._Newton">
+        <rdf:type rdf:resource="urn:absolute:http://TTKGs.org/FullCustomerName"/>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-18T11:31:22Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/Hunter_Gregory_Newton -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:http://TTKGs.org/Hunter_Gregory_Newton">
+        <rdf:type rdf:resource="urn:absolute:http://TTKGs.org/FullCustomerName"/>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-18T11:31:16Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/Hunter_Newton -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:http://TTKGs.org/Hunter_Newton">
+        <rdf:type rdf:resource="urn:absolute:http://TTKGs.org/FullCustomerName"/>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-18T11:30:42Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/Hydroxytyrosol -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:http://TTKGs.org/Hydroxytyrosol">
+        <rdf:type rdf:resource="urn:absolute:http://TTKGs.org/Antioxidant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/Jackie_H._Johnes -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:http://TTKGs.org/Jackie_H._Johnes">
+        <rdf:type rdf:resource="urn:absolute:http://TTKGs.org/FullCustomerName"/>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-18T11:31:35Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/KN64662 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:http://TTKGs.org/KN64662">
+        <rdf:type rdf:resource="urn:absolute:http://TTKGs.org/TTKG278ea688_c715_45b2_838f_d49a72d0b8ba"/>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-18T11:43:03Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/KR07718 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:http://TTKGs.org/KR07718">
+        <rdf:type rdf:resource="urn:absolute:http://TTKGs.org/TTKG278ea688_c715_45b2_838f_d49a72d0b8ba"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/LemonBottle -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:http://TTKGs.org/LemonBottle">
+        <rdf:type rdf:resource="urn:absolute:http://TTKGs.org/TTKG95f29991_4fce_4242_a761_923ffde8a2f2"/>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-18T11:26:22Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/Louisiana -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:http://TTKGs.org/Louisiana">
+        <rdf:type rdf:resource="urn:absolute:http://TTKGs.org/TTKG250197f1_511f_4a2c_a200_22047da1d6cd"/>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-18T11:40:26Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/Michael_Rutledge -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:http://TTKGs.org/Michael_Rutledge">
+        <rdf:type rdf:resource="urn:absolute:http://TTKGs.org/FullCustomerName"/>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-18T11:31:27Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/Mistros_Boxes_Plus -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:http://TTKGs.org/Mistros_Boxes_Plus">
+        <rdf:type rdf:resource="urn:absolute:http://TTKGs.org/TTKG59dec158_c8f9_416d_b0d0_eaa0720b1f6e"/>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-18T11:44:32Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/Navada -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:http://TTKGs.org/Navada">
+        <rdf:type rdf:resource="urn:absolute:http://TTKGs.org/TTKG250197f1_511f_4a2c_a200_22047da1d6cd"/>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-18T11:40:18Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/Nolan_Slater -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:http://TTKGs.org/Nolan_Slater">
+        <rdf:type rdf:resource="urn:absolute:http://TTKGs.org/FullCustomerName"/>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-18T11:30:57Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/North_Dekota -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:http://TTKGs.org/North_Dekota">
+        <rdf:type rdf:resource="urn:absolute:http://TTKGs.org/TTKG250197f1_511f_4a2c_a200_22047da1d6cd"/>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-18T11:40:03Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/Ohio -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:http://TTKGs.org/Ohio">
+        <rdf:type rdf:resource="urn:absolute:http://TTKGs.org/TTKG250197f1_511f_4a2c_a200_22047da1d6cd"/>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-18T11:40:41Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/PaperTaskers -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:http://TTKGs.org/PaperTaskers">
+        <rdf:type rdf:resource="urn:absolute:http://TTKGs.org/TTKG59dec158_c8f9_416d_b0d0_eaa0720b1f6e"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/RosemaryBottle -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:http://TTKGs.org/RosemaryBottle">
+        <rdf:type rdf:resource="urn:absolute:http://TTKGs.org/TTKG95f29991_4fce_4242_a761_923ffde8a2f2"/>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-18T11:26:33Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/SJ24858 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:http://TTKGs.org/SJ24858">
+        <rdf:type rdf:resource="urn:absolute:http://TTKGs.org/TTKG278ea688_c715_45b2_838f_d49a72d0b8ba"/>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-18T11:42:51Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/Sydney_Bartlett -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:http://TTKGs.org/Sydney_Bartlett">
+        <rdf:type rdf:resource="urn:absolute:http://TTKGs.org/FullCustomerName"/>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-18T11:30:37Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/T0007 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:http://TTKGs.org/T0007">
+        <rdf:type rdf:resource="urn:absolute:http://TTKGs.org/TTKGfc34ba00_eb0d_4c44_8596_a8822aefa219"/>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-18T11:24:44Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/TTKG8404ecc4_f51a_4165_838e_50aa4fbdcbeb -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:http://TTKGs.org/TTKG8404ecc4_f51a_4165_838e_50aa4fbdcbeb">
+        <rdf:type rdf:resource="urn:absolute:http://TTKGs.org/FullCustomerName"/>
+        <rdfs:label xml:lang="en">Jackie Johnes</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/TTKGda509799_0115_48e9_8a46_0058aa2fac66 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:http://TTKGs.org/TTKGda509799_0115_48e9_8a46_0058aa2fac66">
+        <rdf:type rdf:resource="urn:absolute:http://TTKGs.org/TTKG250197f1_511f_4a2c_a200_22047da1d6cd"/>
+        <rdfs:label xml:lang="en">Florida</rdfs:label>
+        <skos:defintion>The 27th state in the United States of America.</skos:defintion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/TY19527 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:http://TTKGs.org/TY19527">
+        <rdf:type rdf:resource="urn:absolute:http://TTKGs.org/TTKG278ea688_c715_45b2_838f_d49a72d0b8ba"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/Tennssee -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:http://TTKGs.org/Tennssee">
+        <rdf:type rdf:resource="urn:absolute:http://TTKGs.org/TTKG250197f1_511f_4a2c_a200_22047da1d6cd"/>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-18T11:40:10Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/Texas -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:http://TTKGs.org/Texas">
+        <rdf:type rdf:resource="urn:absolute:http://TTKGs.org/TTKG250197f1_511f_4a2c_a200_22047da1d6cd"/>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-18T11:40:13Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/The_Ink_Trap -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:http://TTKGs.org/The_Ink_Trap">
+        <rdf:type rdf:resource="urn:absolute:http://TTKGs.org/TTKG59dec158_c8f9_416d_b0d0_eaa0720b1f6e"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/Tour -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:http://TTKGs.org/Tour">
+        <rdf:type rdf:resource="urn:absolute:http://TTKGs.org/TTKG95f29991_4fce_4242_a761_923ffde8a2f2"/>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-18T11:27:01Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/UT35233 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:http://TTKGs.org/UT35233">
+        <rdf:type rdf:resource="urn:absolute:http://TTKGs.org/TTKG278ea688_c715_45b2_838f_d49a72d0b8ba"/>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-18T11:43:13Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/XJ89113 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:http://TTKGs.org/XJ89113">
+        <rdf:type rdf:resource="urn:absolute:http://TTKGs.org/TTKG278ea688_c715_45b2_838f_d49a72d0b8ba"/>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-18T11:43:24Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/0001 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:http://TTKGs.org/0001">
+        <rdf:type rdf:resource="urn:absolute:http://TTKGs.org/CustomerID"/>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-18T11:28:35Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/0002 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:http://TTKGs.org/0002">
+        <rdf:type rdf:resource="urn:absolute:http://TTKGs.org/CustomerID"/>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-18T11:28:40Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/0003 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:http://TTKGs.org/0003">
+        <rdf:type rdf:resource="urn:absolute:http://TTKGs.org/CustomerID"/>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-18T11:28:47Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/0004 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:http://TTKGs.org/0004">
+        <rdf:type rdf:resource="urn:absolute:http://TTKGs.org/CustomerID"/>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-18T11:28:51Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/0005 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:http://TTKGs.org/0005">
+        <rdf:type rdf:resource="urn:absolute:http://TTKGs.org/CustomerID"/>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-18T11:28:55Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/0006 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:http://TTKGs.org/0006">
+        <rdf:type rdf:resource="urn:absolute:http://TTKGs.org/CustomerID"/>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-18T11:28:58Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/0007 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:http://TTKGs.org/0007">
+        <rdf:type rdf:resource="urn:absolute:http://TTKGs.org/CustomerID"/>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-18T11:29:04Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/0008 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:http://TTKGs.org/0008">
+        <rdf:type rdf:resource="urn:absolute:http://TTKGs.org/CustomerID"/>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-18T11:29:07Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/0009 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:http://TTKGs.org/0009">
+        <rdf:type rdf:resource="urn:absolute:http://TTKGs.org/CustomerID"/>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-18T11:29:12Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/0010 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:http://TTKGs.org/0010">
+        <rdf:type rdf:resource="urn:absolute:http://TTKGs.org/CustomerID"/>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-18T11:29:23Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/2_Rockefeller_Avenue_Waco_Texas_76796 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:http://TTKGs.org/2_Rockefeller_Avenue_Waco_Texas_76796">
+        <rdf:type rdf:resource="urn:absolute:http://TTKGs.org/CustomerAddress"/>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-18T11:35:30Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/229_Golden_Leaf_Road_Gadsden_Alabama_35905 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:http://TTKGs.org/229_Golden_Leaf_Road_Gadsden_Alabama_35905">
+        <rdf:type rdf:resource="urn:absolute:http://TTKGs.org/CustomerAddress"/>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-18T11:38:22Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/4829_Badeau_Parkway_Chattanooga_Tennessee_37405 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:http://TTKGs.org/4829_Badeau_Parkway_Chattanooga_Tennessee_37405">
+        <rdf:type rdf:resource="urn:absolute:http://TTKGs.org/CustomerAddress"/>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-18T11:35:05Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/556_Lakewood_Park_Bismark_North_Dakota_58505 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:http://TTKGs.org/556_Lakewood_Park_Bismark_North_Dakota_58505">
+        <rdf:type rdf:resource="urn:absolute:http://TTKGs.org/CustomerAddress"/>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-18T11:34:33Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/6_Jana_Park_San_Antonio_Texas_78240 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:http://TTKGs.org/6_Jana_Park_San_Antonio_Texas_78240">
+        <rdf:type rdf:resource="urn:absolute:http://TTKGs.org/CustomerAddress"/>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-18T11:37:32Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/6502_Montana_Junction_New_Orleans_Louisiana_70174 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:http://TTKGs.org/6502_Montana_Junction_New_Orleans_Louisiana_70174">
+        <rdf:type rdf:resource="urn:absolute:http://TTKGs.org/CustomerAddress"/>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-18T11:37:05Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/6755_Burrows_Center_Columbus_Georgia_31914 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:http://TTKGs.org/6755_Burrows_Center_Columbus_Georgia_31914">
+        <rdf:type rdf:resource="urn:absolute:http://TTKGs.org/CustomerAddress"/>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-18T11:39:27Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/8_Gerald_Point_Orlando_Florida_32858 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:http://TTKGs.org/8_Gerald_Point_Orlando_Florida_32858">
+        <rdf:type rdf:resource="urn:absolute:http://TTKGs.org/CustomerAddress"/>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-18T11:39:08Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/8231_Crowley_Crossing_Cincinnati_Ohio_45999 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:http://TTKGs.org/8231_Crowley_Crossing_Cincinnati_Ohio_45999">
+        <rdf:type rdf:resource="urn:absolute:http://TTKGs.org/CustomerAddress"/>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-18T11:38:45Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/87_Brentwood_Park_Dallas_Texas_75358 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:http://TTKGs.org/87_Brentwood_Park_Dallas_Texas_75358">
+        <rdf:type rdf:resource="urn:absolute:http://TTKGs.org/CustomerAddress"/>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-18T11:36:04Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/88_Burning_Wood_Junction_Anaheim_California_92812 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:http://TTKGs.org/88_Burning_Wood_Junction_Anaheim_California_92812">
+        <rdf:type rdf:resource="urn:absolute:http://TTKGs.org/CustomerAddress"/>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-18T11:37:58Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:http://TTKGs.org/99_Sage_Street_Reno_Navada_89505 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:http://TTKGs.org/99_Sage_Street_Reno_Navada_89505">
+        <rdf:type rdf:resource="urn:absolute:http://TTKGs.org/CustomerAddress"/>
+        <dc:creator>ANF</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-18T11:36:27Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="urn:absolute:http://TTKGs.org/TTKG4b6c8521_d860_4288_95e6_9eec4faac417"/>
+            <rdf:Description rdf:about="urn:absolute:http://TTKGs.org/TTKGa65e2034_1b8c_4bf8_b531_6e8c95f814ac"/>
+            <rdf:Description rdf:about="urn:absolute:http://TTKGs.org/TTKGc2a263f4_a4b0_4ae0_b48f_2dbf6d0a02ba"/>
+            <rdf:Description rdf:about="urn:absolute:http://TTKGs.org/TTKGdccdc782_b07c_46d4_b057_a3de93d49cdf"/>
+            <rdf:Description rdf:about="urn:absolute:http://TTKGs.org/TTKGe264d4cb_3c4b_43b4_8ed2_94949f4ad543"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="urn:absolute:http://TTKGs.org/TTKGc73048b4_4be8_49b7_83f1_b3327ac10d45"/>
+            <rdf:Description rdf:about="urn:absolute:http://TTKGs.org/TTKGd39a0727_d31b_41dd_bdd7_28a96e7940c1"/>
+            <rdf:Description rdf:about="urn:absolute:http://TTKGs.org/TTKGdb9e000f_8062_4cee_8b09_99c613f40dd9"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
