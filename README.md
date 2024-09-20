@@ -7,9 +7,9 @@ This repository has files that relate to certain videos in the course.
 
 ## Installing
 1. To use these exercise files, you must have the following installed:
-	- [list of requirements for course]
+	- [https://protege.stanford.edu/software.php#desktop-protege]
 2. Clone this repository into your local machine using the terminal (Mac), CMD (Windows), or a GUI tool like SourceTree.
-3. [Course-specific instructions]
+3. Once the repo is cloned, you can open the RDF files in Protege and the markdown files either in native git or in your favorite tool to view the code.
 
 
 [0]: # (Replace these placeholder URLs with actual course URLs)
