@@ -1,0 +1,54 @@
+# Final Project Solution Walkthrough
+This is a walkthrough for the final project. As with all data models decisions are made throughout and while you may decide to make a different decision than I did, you do need to check the logic is sound so please make sure to check your logic if you do decide to make a different decision than I did in the final project.
+
+This is also the base-model for the course so I encourage you to test adding data you find online or from using methods like graphRAG to continue to experiment now that you have a use case and base-model to work from.
+
+## Final Project walkthrough
+TTOO Ontology Design Notes
+Let’s start by adding the new nodes we will need to represent the rest of the data for our known use case.
+
+We will add similar identifying details for Customer that we have for Vendor by adding fullCustomerName, CustomerID, and CustomerAddress as nodes nested under Customer because this is data that defines a customer. We could model Customer name into first and surname because we have that data, but for now we will keep the same convention for our Customer and Vendor nodes. These nested nodes will inherit all properties defined for customer so check that logic to make sure it is sound. In this case, we have Jackie Johnes as an instance of Customer, but now that we have more specific Customer modeling, Jackie Johnes the instance should be removed from Customer and added to fullCustomerName.
+
+Each named entity in our model has a name, ID, and address but we could break these out from their nesting nodes of Customer and Vendor and create a general class for Name, ID, and Address if we wanted to make sure they could be reused by other entity types. Because the dataset of TTOO only has these two entity types, we will keep the nodes specific and modeled in their separate hierarchies. If we had a lot of entity types, we could model Entity as a node, with Name, ID, and Address as sub-nodes, and have Customer and Vendor as a new sub-class of Entity called Entity Type, but for this small us case that would be over-architecting the model for the use case. We will want to use the entity ID node as the main entity node moving forward since that is how entity resolution will resolve to specific entities in the graph.
+
+You may need the address modeled into its individual parts or the phone number for entity resolution and disambiguation, but until you know that you need that, keep the model as necessity only. We want to see a return on our investment on this project quickly to make sure this solution is fit for purpose before adding too much into the model that we may not need. And, remember, graph data models are flexible so we can always extend the model later. This may require some refactoring, but if you design the model with extensions in mind (i.e. not overly specific upper nodes and relationships), you will make better choices for reuse which should lead to less refactoring later.
+
+We do not need price of products for our environmental use case so we won’t add relations or data to that node. But, if you were using this model and graph for predicting cost efficiency measures adding the cost for all entire product pipeline would need to be added to the model. Because we won’t use price in our model, let’s delete the node.
+
+We need to add the VendorTypes since the type of vendor dictates what the produce for TTOO. The types from our data are Citrus, Chili Oil, Packaging, Herbs, Shipping Supplies, and Bottling Supplies.
+
+Next, let’s add the relationships we will need to create facts for these nodes to capture.
+
+Olive oils and the additives used in them need to be connected with a relationship since there is a connection between additives and environmental factors. We will connect the Additives to the olive oils they are used in with the new relation “ingredientOf” with the Domain of some additives because some additives could be used in multiple olive oil triples. This is also a one-direction relation so let’s add this as an asymmetric relation.
+
+Customers purchase specific ProductIDs so Customers can be connected to Product with a new relationship called “Purchased” because at TTOO we consider anyone who has purchased a product a customer. This is also a one-direction asymmetric relation.
+
+Let’s add some relations to connect CustomerID to CustomerAddress with hasAddress as a new relation (which we can reuse for the same connection with VendorID and VendorAddress). This will also be an asymmetric relation. 
+
+We already have hasName as a relation, this will be Domain customerID, vendorID, and productID since al three will have names. This will be an asymmetric relation. Now, during the course we added VendorName as the domain but we need to remove that as a Domain now because we are using the VendorID as our main entity to hang our data from.
+
+We will want constraints around Customer and Vendor IDs so lets add hasID as an asymmetric relation for the Customer, Vendor, and ProductID nodes as Domain.
+
+For productType and VendorType, let’s add the relation hasType. This will be a symmetric relation because its a type relation, meaning a product is type olive oil (ID of product) and olive oil (ID of product) is type product. ProductTypes and vendorTypes are the list sets we will constrain the node productTypes and vendorTypes to so we will add those in as Ranges for productType and vendorType respectively.
+
+For relations that already exist in the model, byProduct and measureOutputOf are asymmetric relations, hasAdditive can be used in the Domain of some Olive oil; homeState can be used by the Domain of CustomerID and VendorID as some homeState since all Customer and Vendor nodes can use homeState values legitimately, and produces can be used in the Domain of some VendorID and VendorType. These all should be asymmetric relations.
+
+Next, let’s add some triples so you can test fact checking the data, either with the demo data provided in the course or with graphRAG or other data you choose to experiment with using this model.
+
+Add the triple CustomerID purchase min. 1 ProductID. Because that logic is a definition of customer that TTOO uses, we should also add that to our definitions for the node CustomerID and ProductID. 
+
+Let’s say for TTOO we have a company guideline that named entities can only have a maximum of 5 addresses in our customer management system (CMS). We will add that in as a note since its not a definition to the Customer and Vendor Address nodes as well as adding a max of 5 to constrain the Customer and ProductID nodes hasAddress customer and Vendor Address data so that any named entity can only have 5 addresses. So if a customer or vendor has more than 5 addresses in the graph, the triples for that customer will all be flagged as invalid and needing human validation or correction.
+
+For fullCustomerName, people can have a few names so we will leave that as some. For vendors, while they can also have different names, TTOO requires all vendors supply only one so we will add exactly 1. For hasID, customers can have multiple names but each customer should only be connected with one customerID (exactly 1 constraint when adding the customerID and vendorID triples to their Named nodes). ProductID also needs to be connected with hasName and products can have multiple names so we will add this as some.
+
+The relation hasType could be reused if you later wanted to model Customers, Vendors, and other entity types as entity types instead of the specific roles we have them modeled as now. For the triples, ProductID hasType exactly 1 constraint because our products can only have one type (in other words, Chili Olive Oil cannot be both an Olive oil and pulp product type because the pulp is a byProduct in the making of the olive oil.
+
+VendorTypes will be similar. VendorID will have a min. of 1 VendorType since the vendor needs to supply at least one type of product to TTOO, but each vendor could supply multiple product types. 
+
+Now that Customer nodes have been fleshed out more, we can see the Vendor nodes need to be updated so they are more consistent with one another. Lets add homesState exactly 1 State and produces some additive to VendorID instead of Vendor. We will need to move the triple of homeState from Customer to CustomerID as well. Do this by deleting the old triple and adding the new triples in their new location.
+
+Lets also now add the Olive Oil types to their ingredients with the ingredients relation, as well as which vendor types produces the additives. 
+
+Finally, let’s add our instances from our Customer and Vendor tables. Usually these would be populated into your graph database using the data model we just created as the schema, but for this course we will populate within the model itself so you can see how facts are modeled and so that you can run a few fact verification runs on the data as well as some entity disambiguation.
+
+I hope you have had fun and learned some interesting skills from this course! Thank you for joining me and I hope to see you again soon.

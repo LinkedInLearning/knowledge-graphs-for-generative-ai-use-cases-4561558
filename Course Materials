@@ -1,0 +1,117 @@
+# Course Materials
+This is a list of course materials mentioned in within this course. More resources are also noted for further learning and make sure to check back as more resources will be added periodically.
+
+## Chapter 2, Video 5
+Short-ish list of graph and graph database solutions
++AeroSpike
++AgensGraph
++AllegroGraph
++Amazon Neptune
++AnzoGraph
++ArangoDB
++Azure Cosmos DB
++ClaraFinds
++DataStax Enterprise
++Dgraph
++Diffbot
++EasyGraph
++Eccenca
++Fluree
++Grafo
++GraphDB
++Graphileon
++Graphistry
++Graphite
++Graphologi
++draw.io
++HUME
++IBM Graph
++JanusGraph
++Lettria
++Linkurious
++Memgraph
++Metaphactory
++Mondeca 
++NebulaGraph
++Neo4j
++Ontopic
++Oracle Spatial Graph
++OrientDB
++OriginTrail
++Palatir
++PoolParty
++Protégé
++PuppyGraph
++Quipu Semantic AI
++RawCubes
++RDFox
++Redis Enterprise
++Semaphore
++Senzing
++Siren
++Stardog
++Terminus
++TigerGraph
++Timbr.ai
++TopBraid
++TypeDB
+
+## Chapter 4, Video 1
+Graph query learning materials
++For SQL: (https://www.linkedin.com/learning-login/share?forceAccount=false&redirect=https%3A%2F%2Fwww.linkedin.com%2Flearning%2Fsql-essential-training-20685933%3Ftrk%3Dshare_ent_url%26shareId%3DCQz4v4QARLqDUxM6sn4dFA%253D%253D)
++Cypher: (https://www.linkedin.com/learning-login/share?forceAccount=false&redirect=https%3A%2F%2Fwww.linkedin.com%2Flearning%2Fintroduction-to-neo4j%2Fintroducing-cypher%3Ftrk%3Dshare_video_url%26shareId%3DCQz4v4QARLqDUxM6sn4dFA%253D%253D)
++Cypher: (https://graphacademy.neo4j.com/courses/cypher-fundamentals/)
++Cypher: (https://memgraph.com/learn-cypher-query-language)
++Gremlin: (https://www.gremlin.com/community/tutorials)
++SPARQL: (https://github.com/yasenstar/Learn_SPARQL)
++SPARQL: (https://docs.data.world/tutorials/sparql/)
++SPARQL: (https://ld4pe.dublincore.org/learning_resource/simple-protege-tutorial-running-sparql-queries-on-both-ontologies/)
+
+## Chapter 4, Video 2
+Graph algorithm explainers
++(https://www.graphable.ai/blog/graph-algorithms/)
++(https://memgraph.com/blog/graph-algorithms-applications)
++(https://neo4j.com/docs/graph-data-science/current/algorithms/)
++(https://towardsdatascience.com/10-graph-algorithms-visually-explained-e57faa1336f3)
++(https://www.freecodecamp.org/news/graph-algorithms-and-data-structures-explained-with-java-and-c-examples/)
++(https://epubs.siam.org/doi/10.1137/1.9780898719918)
++(https://github.com/tigergraph/graph-ml-notebooks)
++(https://github.com/ta-data-bcn/machine-learning-day/blob/master/Graph_Algorithms_Neo4j.pdf)
+
+## Chapter 5, Video 2
+Entity resolution libraries and tools
++(https://www.linkedin.com/learning-login/share?forceAccount=false&redirect=https%3A%2F%2Fwww.linkedin.com%2Flearning%2Fadvanced-ai-nlp-techniques-for-clinical-datasets%3Ftrk%3Dshare_ent_url%26shareId%3DVMRa9QqWQWKt%252FeIa0I051A%253D%253D)
++(https://github.com/awslabs/sagemaker-graph-entity-resolution)
++(https://senzing.com/resources/)
++(https://github.com/neo4j-graph-examples/entity-resolution)
++(https://www.tigergraph.com/solutions/entity-resolution/)
++(https://neo4j.com/developer-blog/entity-resolved-knowledge-graphs/)
++(https://towardsdatascience.com/entity-resolved-knowledge-graphs-6b22c09a1442)
++(https://paperswithcode.com/task/entity-resolution/codeless?page=3)
++(https://pytorch.org/tutorials/)
++(https://github.com/moj-analytical-services/splink/discussions/2099)
++(https://github.com/DerwenAI/ERKG)
++(https://zentity.io/)
+
+## Additional resources
++LLM Basics: (https://www.linkedin.com/learning-login/share?forceAccount=false&redirect=https%3A%2F%2Fwww.linkedin.com%2Flearning%2Fintroduction-to-large-language-models%3Ftrk%3Dshare_ent_url%26shareId%3DT0%252F4XgPfQ5a00U7xmbmM1w%253D%253D)
++RAG: (https://www.linkedin.com/learning-login/share?forceAccount=false&redirect=https%3A%2F%2Fwww.linkedin.com%2Flearning%2Fbuilding-rag-solutions-with-azure-ai-studio%3Ftrk%3Dshare_ent_url%26shareId%3D3fC%252BtMVHR1K80tVWTzIQfg%253D%253D)
++LLM architectures: (https://www.linkedin.com/learning-login/share?forceAccount=false&redirect=https%3A%2F%2Fwww.linkedin.com%2Flearning%2Fgenerative-ai-and-llmops-building-blocks-and-applications%3Ftrk%3Dshare_ent_url%26shareId%3DrhUUHgc8SAaJ5aKsHoNkDQ%253D%253D)
++ETL pipeline: (https://www.linkedin.com/learning-login/share?forceAccount=false&redirect=https%3A%2F%2Fwww.linkedin.com%2Flearning%2Fdata-ingestion-with-python%3Ftrk%3Dshare_ent_url%26shareId%3DeRDA%252FKPJRLGfvgye9%252FvHmQ%253D%253D)
++Data pipline: (https://www.linkedin.com/learning-login/share?forceAccount=false&redirect=https%3A%2F%2Fwww.linkedin.com%2Flearning%2Ftransition-from-data-science-to-data-engineering%3Ftrk%3Dshare_ent_url%26shareId%3DnFfwzKCFQAGH8K7iIKFKBQ%253D%253D)
++LLMs and KGs: (https://paperswithcode.com/paper/head-to-tail-how-knowledgeable-are-large)
++Fact checking: (https://aclanthology.org/2022.tacl-1.11/)
++LLMs and KGs: (https://arxiv.org/abs/2306.08302)
++Graph networks and relational: (https://arxiv.org/abs/1806.01261+ML and graphs training: (https://online.stanford.edu/courses/xcs224w-machine-learning-graphs)
++LLM benchmarking: (https://lmarena.ai/)
++Graph benchmarking: (https://dice-group.github.io/IGUANA/docs/3.2/usage/results/)
++graphRAG: (https://github.com/microsoft/graphrag)
++graphRAG: (https://neo4j.com/blog/graphrag-manifesto/)
++graphRAG: (https://arxiv.org/abs/2408.08921)
++hybridRAG: (https://arxiv.org/pdf/2408.04948)
++graphRAG and KGs: (https://arxiv.org/pdf/2405.11706)
++text to graph: (https://medium.com/@peter.lawrence_47665/text-to-graph-via-llm-pre-training-prompting-or-tuning-3233d1165360)
++QnA with graph: (https://arxiv.org/pdf/2404.17723)
++Increased LLM accuracy with KGs: (https://arxiv.org/abs/2311.07509)
++Ontology 101: (https://protege.stanford.edu/publications/ontology_development/ontology101.pdf)
++Pizza Ontyology Walkthrough: (https://drive.google.com/file/d/1A3Y8T6nIfXQ_UQOpCAr_HFSCwpTqELeP/view)
